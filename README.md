@@ -27,11 +27,11 @@ pip install pandas rapidfuzz
 2. **Run the Script**:
    Execute the script from the command line, passing in the CSV file as an argument. Optionally, specify a `batch_size` to control memory usage.
    ```bash
-   python duplicate_finder.py <your_filename.csv> --batch_size 500
+   python findDuplicates.py <your_filename.csv> --batch_size 500
    ```
    Example:
    ```bash
-   python duplicate_finder.py sample_contacts.csv --batch_size 500
+   python findDuplicates.py sample_contacts.csv --batch_size 500
    ```
 
 3. **Arguments**:
