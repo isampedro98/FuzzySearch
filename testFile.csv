@@ -1,0 +1,6 @@
+contactID,name,name1,email,address,postalZip
+1,John,Doe,john@example.com,123 Main St,12345
+2,John,Doe,john@example.com,123 Main St,12345
+3,John,Doe,jane@example.com,456 Paramount Boulevard,67890
+4,Arthur,Conan,arthur@gmail.com,456 Paramount Boulevard,67890
+5,,Doe,,456 Elm St,NaN

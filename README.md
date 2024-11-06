@@ -76,3 +76,10 @@ low_matches.csv        # Lower confidence matches
 Feel free to adjust the match accuracy thresholds or batch size to meet your specific requirements:
 - **Thresholds** can be modified in the command-line arguments `--high`, `--mid-high`, `--mid`, and `--mid-low`.
 - **Batch size** can be specified as a command-line argument or adjusted in the code.
+
+## Tests
+
+1. **Similarity Calculations**: The program should accurately compute similarity scores accross different fields.
+2. **Threshold Categorization**: Matches should be correctly categorized as `High`, `Mid High`, `Mid`, `Mid-low` and `Low` based on similarity scores.
+3. **Edge Cases**: Edge cases like empty or NaN values, different combinations of similar and dissimilar fields should be considered correctly.
+4. **Batch Processing**: The batching logic should work as expected without missing any comparisons.
