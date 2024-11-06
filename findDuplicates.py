@@ -33,10 +33,8 @@ def calculate_similarity_score(row1, row2):
 
     # These last ones can be commented out, as though it provides the exact duplicate, but taking into account
     # that the mistake in the address and postalzip can be ignored. If first name, last name and email are the same, then we should be already talking about the same person/contact
-    # As the exercise doesn't clarify this, I take it as it is OK.
-
-    # scores['address'] = fuzz.ratio(str(row1['address']), str(row2['address'])) if row1['address'] and row2['address'] else 0
-    # scores['postalZip'] = fuzz.ratio(str(row1['postalZip']), str(row2['postalZip'])) if row1['postalZip'] and row2['postalZip'] else 0
+    scores['postalZip'] = fuzz.ratio(str(row1['postalZip']), str(row2['postalZip'])) if row1['postalZip'] and row2['postalZip'] else 0
+    scores['address'] = fuzz.ratio(str(row1['address']), str(row2['address'])) if row1['address'] and row2['address'] else 0
 
     # Compute the overall score as the average of field scores
     overall_score = sum(scores.values()) / len(scores)
