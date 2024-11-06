@@ -83,3 +83,6 @@ Feel free to adjust the match accuracy thresholds or batch size to meet your spe
 2. **Threshold Categorization**: Matches should be correctly categorized as `High`, `Mid High`, `Mid`, `Mid-low` and `Low` based on similarity scores.
 3. **Edge Cases**: Edge cases like empty or NaN values, different combinations of similar and dissimilar fields should be considered correctly.
 4. **Batch Processing**: The batching logic should work as expected without missing any comparisons.
+
+## PS
+This code could be improved. An example can be parametrizing the columns of the file, for example.
